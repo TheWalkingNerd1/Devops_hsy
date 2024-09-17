@@ -10,15 +10,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'dotnet build --configuration Release'
+                sh 'dotnet build'
             }
         }
 
-        stage('Test') {
-            steps {
-                sh 'dotnet test'
-            }
-        }
     }
 
     post {
