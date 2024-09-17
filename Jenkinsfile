@@ -10,6 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
+                cd HelloWorldApp
                 bat 'dotnet build'
             }
         }
