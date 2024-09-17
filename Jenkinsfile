@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                dotnet build
+                bat 'dotnet build'
             }
         }
 
